@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stack Using Array Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Stack Using Array</h1>
+    <p>Visualize LIFO operations: Push, Pop, Peek, and Display</p>
+  </header>
+
+  <main>
+    <section class="panel">
+      <h2>Stack Operations</h2>
+      <div class="controls">
+        <div class="control">
+          <h3>Push</h3>
+          <label for="pushValue">Value to push</label>
+          <input id="pushValue" type="number" step="1" placeholder="Enter an integer">
+          <button id="pushBtn">Push onto stack</button>
+        </div>
+
+        <div class="control">
+          <h3>Pop</h3>
+          <p class="help">Remove the top element from the stack.</p>
+          <button id="popBtn" class="danger">Pop top element</button>
+        </div>
+
+        <div class="control">
+          <h3>Peek</h3>
+          <p class="help">View the top element without removing it.</p>
+          <button id="peekBtn" class="secondary">Peek at top</button>
+        </div>
+
+        <div class="control">
+          <h3>Other operations</h3>
+          <button id="displayBtn" class="secondary">Display stack</button>
+          <button id="clearBtn" class="danger">Clear stack</button>
+        </div>
+      </div>
+      <div id="status" role="status" aria-live="polite">Ready. Push a value to begin.</div>
+    </section>
+
+    <section class="panel">
+      <div class="stack-heading">
+        <h2>Current Stack</h2>
+        <div class="meta">
+          <span class="pill" id="sizeLabel">Size: 0</span>
+          <span class="pill" id="topLabel">Top: None</span>
+        </div>
+      </div>
+      <div class="stack-area">
+        <div class="top-pointer" id="topPointer" hidden>TOP ↓</div>
+        <div id="stackView" class="stack-view">
+          <div class="empty">The stack is empty.</div>
+        </div>
+        <div class="stack-base"></div>
+      </div>
+      <p class="help">A stack follows <strong>LIFO</strong> (Last In, First Out). The last value pushed is the first value popped.</p>
+    </section>
+  </main>
+</body>
+</html>
