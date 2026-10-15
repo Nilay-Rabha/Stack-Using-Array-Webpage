@@ -32,9 +32,9 @@ A stack follows the **LIFO (Last In, First Out)** principle, meaning the last el
 └── README.md
 
 
-**Name:** [Your Name]
+Name: Nilay Jyoti Rabha
 
-**GitHub:** [Your GitHub Profile URL]
+GitHub: https://github.com/Nilay-Rabha
 
 ## 📄 License
 
